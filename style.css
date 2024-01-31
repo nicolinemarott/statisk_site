@@ -1,0 +1,98 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: #fff9ed;
+  list-style: none;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: white;
+  color: black;
+}
+
+/* TEKST START*/
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  font-size: 1rem;
+}
+
+a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #bda18c;
+}
+
+.kategori {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem;
+}
+
+.seasons {
+  background-color: #e1daca;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.seasons h2:hover {
+  color: #bda18c;
+}
+
+.produktliste {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1rem;
+  gap: 2rem;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.price {
+  text-decoration: line-through;
+}
+
+.sale {
+  color: red;
+}
