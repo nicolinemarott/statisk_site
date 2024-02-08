@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="menu.css">
 
     <title>Product</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,10 +24,10 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">FRONTPAGE</a></li>
-                <li><a href="kategori.html">CATEGORIES</a></li>
-                <li><a href="produktliste.html">PRODUCT LIST</a></li>
-                <li><a href="produkt.html">PRODUCT</a></li>
+                <li><a href="index.html">Frontpage</a></li>
+                <li><a href="kategori.html">Categories</a></li>
+                <li><a href="produktliste.html">Product list</a></li>
+                <li><a href="produkt.html">Product</a></li>
             </ul>
             <div class="burger">
                 <div class="line"></div>
@@ -35,18 +36,24 @@
             </div>
         </nav>
     </header>
-    <hr>
+
     <main>
-        <h1>PRODUCT</h1>
+        <h1>Product</h1>
 
         <article class="product">
-            <img src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp" alt="taske">
+            <div class="product_img"> <img src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp" alt="taske"></div>
             <div class="">
                 <h2>Puma</h2>
-                <div>Big Cat Backpack Black</div>
-                <div>2010 - Sports</div>
-
+                <div class="info">
+                    <div class="productdisplayname">Big Cat Backpack Black</div>
+                    <div><span class="year">2010</span> - <span class="theme">Sports</span></div>
+                </div>
+                <div class="price">Price 895,-</div>
+                <div class="sale">Now 695,-</div>
+                <div class="add_to_basket"><a href="#">ADD TO BASKET</a></div>
             </div>
+
+
         </article>
 
     </main>
@@ -55,6 +62,7 @@
 
 
     <script src="menu.js"></script>
+    <script src="produkt.js"></script>
 </body>
 
 </html>

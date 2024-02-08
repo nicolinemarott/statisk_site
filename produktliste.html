@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="menu.css">
 
     <title>Product liste</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,10 +24,10 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">FRONTPAGE</a></li>
-                <li><a href="kategori.html">CATEGORIES</a></li>
-                <li><a href="produktliste.html">PRODUCT LIST</a></li>
-                <li><a href="produkt.html">PRODUCT</a></li>
+                <li><a href="index.html">Frontpage</a></li>
+                <li><a href="kategori.html">Categories</a></li>
+                <li><a href="produktliste.html">Product list</a></li>
+                <li><a href="produkt.html">Product</a></li>
             </ul>
             <div class="burger">
                 <div class="line"></div>
@@ -35,21 +36,28 @@
             </div>
         </nav>
     </header>
-    <hr>
+
     <main>
-        <h1>PRODUCT LIST</h1>
+        <h1>Product list</h1>
 
-        <div class="produktliste">
-
-            <article> <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="t-shirt">
+        <template id="product_card_template">
+            <article class="product_card">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="t-shirt">
                 <h2>Sahara Round Neck Jersey</h2>
-                <div>Nike</div>
-                <div class="price">Price 895,-</div>
-                <div class="sale">Now 695,-</div>
-                <a href="produkt.html">Buy now</a>
+                <div class="brand">Nike</div>
+                <div class="price_sale">
+                    <div class="price">Price 895,-</div>
+                    <div class="sale">Now 695,-</div>
+                </div>
+
+                <a class="buy_now" href="produkt.html">Buy now</a>
 
             </article>
-            <article> <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="t-shirt">
+        </template>
+        <div class="produktliste">
+
+
+            <!-- <article> <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="t-shirt">
                 <h2>Sahara Round Neck Jersey</h2>
                 <div>Nike</div>
                 <div>Price 895,-</div>
@@ -84,7 +92,7 @@
                 <div class="price">Price 1299,-</div>
                 <div class="sale">Now 695,-</div>
                 <a href="produkt.html">Buy now</a>
-            </article>
+            </article> -->
 
         </div>
 
@@ -95,6 +103,7 @@
 
 
     <script src="menu.js"></script>
+    <script src="produktliste.js"></script>
 </body>
 
 </html>

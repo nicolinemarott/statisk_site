@@ -12,7 +12,7 @@ img {
 }
 
 body {
-  background-color: #fff9ed;
+  background-color: #3f352c;
   list-style: none;
 }
 
@@ -29,7 +29,7 @@ footer {
 /* TEKST START*/
 h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   margin-top: 5rem;
   margin-left: 3rem;
@@ -39,20 +39,20 @@ h1 {
 
 h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   text-decoration: none;
 }
 
 p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 1rem;
 }
 
 a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 1rem;
   text-decoration: none;
 }
@@ -68,11 +68,14 @@ a:hover {
 }
 
 .seasons {
-  background-color: #e1daca;
+  background-color: #ffffff;
   padding: 2rem;
   margin: 2rem;
 }
 
+.seasons h2 {
+  color: #3f352c;
+}
 .seasons h2:hover {
   color: #bda18c;
 }
@@ -87,12 +90,79 @@ a:hover {
 .product {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 5rem;
 }
 
-.price {
-  text-decoration: line-through;
+.product img {
+  margin-left: 2rem;
+}
+
+.product div {
+  color: #ffffff;
 }
 
 .sale {
   color: red;
+  display: none;
+}
+
+.price_sale {
+  display: flex;
+  justify-content: space-between;
+}
+
+.on_sale::before {
+  content: "SALE";
+  position: absolute;
+  background-color: red;
+  z-index: 1000;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.sold_out::before {
+  content: "SOLD OUT";
+  position: absolute;
+  background-color: rgb(60, 58, 58);
+  z-index: 1000;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  color: #ffffff;
+}
+
+.product .sold_out::before {
+  content: "SOLD OUT";
+  position: absolute;
+  background-color: rgb(60, 58, 58);
+  z-index: 1000;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+.product .on_sale::before {
+  content: "SALE";
+  position: absolute;
+  background-color: rgb(60, 58, 58);
+  z-index: 1000;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+.brand {
+  color: white;
+}
+
+.price {
+  color: white;
+}
+
+.info {
+  margin-top: 1rem;
+}
+
+.add_to_basket {
+  margin-top: 5rem;
 }
